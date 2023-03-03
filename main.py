@@ -267,9 +267,9 @@ def top_mv():
     # 3 内容解析
     soup = BeautifulSoup(res_text, "html.parser")
     soup1 = soup.find_all(width="75")  # 解析出电影名称
-    # print(soup1[0]['alt'])
+    print(soup1[0]['alt'])
     soup2 = soup.find_all('span', class_="rating_nums")  # 解析出评分
-    # print(soup2[0].text)
+    print(soup2[0].text)
     # 4数据的处理
 
     """简单处理1，输入数值N，返回排第N的电影名及评分"""
